@@ -1,11 +1,11 @@
 // Copyright 2016 Google Inc.
-// 
+//
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
-// 
+//
 //      http://www.apache.org/licenses/LICENSE-2.0
-// 
+//
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -227,8 +227,8 @@
     // Weather codes: https://developer.yahoo.com/weather/documentation.html#codes
     weatherCode = parseInt(weatherCode);
     switch (weatherCode) {
-      case 25: // cold
-      case 32: // sunny
+      case 25:  'cold'
+      case 32:  'sunny'
       case 33: // fair (night)
       case 34: // fair (day)
       case 36: // hot
@@ -295,7 +295,7 @@
   var initialWeatherForecast = {
     key: '2459115',
     label: 'New York, NY',
-    created: '2016-07-22T01:00:00Z',
+    created: Date.now(),
     channel: {
       astronomy: {
         sunrise: "5:43 am",
@@ -304,7 +304,7 @@
       item: {
         condition: {
           text: "Windy",
-          date: "Thu, 21 Jul 2016 09:00 PM EDT",
+          date: Date.now(),
           temp: 56,
           code: 24
         },
@@ -328,7 +328,7 @@
     }
   };
   // TODO uncomment line below to test app with fake data
-  // app.updateForecastCard(initialWeatherForecast);
+   app.updateForecastCard(initialWeatherForecast);
 
   /************************************************************************
    *
